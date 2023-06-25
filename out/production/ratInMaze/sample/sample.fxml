@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1330.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="150.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginbutton" text="     Enter the size of maze" wrappingWidth="276.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="385.0" layoutY="158.0" onAction="#EID" prefHeight="25.0" prefWidth="82.0" styleClass="loginbutton" stylesheets="@css.css" text="Enter" />
+      <JFXTextField fx:id="NID" focusColor="#f657ff" layoutX="201.0" layoutY="158.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter size" unFocusColor="#6747cd" />
+      <Text layoutX="115.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="welcome in maze PR" wrappingWidth="276.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="14.0" layoutY="248.0" prefHeight="309.0" prefWidth="600.0">
+         <content>
+            <GridPane fx:id="gp">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Text layoutX="63.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginbutton" text="    make your maze" wrappingWidth="276.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="494.0" layoutY="561.0" onAction="#SED" prefHeight="25.0" prefWidth="82.0" styleClass="loginbutton" stylesheets="@css.css" text="Lets gO" />
+      <Line endX="36.0" endY="663.5" layoutX="596.0" layoutY="14.0" startX="36.0" startY="-14.0" />
+      <Text layoutX="858.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE MAZE" wrappingWidth="276.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="677.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All path " wrappingWidth="106.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="653.0" layoutY="339.0" prefHeight="218.0" prefWidth="246.0">
+         <content>
+            <GridPane fx:id="s2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="817.0" layoutY="62.0" prefHeight="218.0" prefWidth="246.0">
+         <content>
+            <GridPane fx:id="s1">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="1043.0" layoutY="335.0" prefHeight="226.0" prefWidth="246.0">
+         <content>
+            <GridPane fx:id="s3">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Line endX="46.0" endY="351.79290771484375" layoutX="903.0" layoutY="331.0" startX="46.0" startY="-16.5" />
+      <Text layoutX="1081.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="op path" wrappingWidth="106.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
